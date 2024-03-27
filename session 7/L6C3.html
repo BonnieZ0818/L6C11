@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    <body>
+        <center>
+            <p>Play, Pause and Stop</p >
+            <video src="COW.mp4" id="Video1" width="400"></video>
+            <script>
+                function MyVideo() {
+                    document.getElementById("Video1").play();
+                }
+
+                function MyVideoP() {
+                    document.getElementById("Video1").pause();
+                }
+
+                function MyVideoT() {
+                    document.getElementById("Video1").pause();
+                    document.getElementById("Video1").currentTime=0;
+                }
+            </script>
+            <br><br>
+            <button onclick="MyVideo()">PLAY IT</button>
+            <button onclick="MyVideoP()">PAUSE</button>
+            <button onclick="MyVideoT()">RESTART</button>
+
+        </center>
+    </body>    
+    </head>
+</html>
